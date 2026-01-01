@@ -51,12 +51,6 @@ body,
   user-select: none;
 }
 
-.contact-links > * {
-  flex: 1 1 auto;
-  min-width: 0;
-  text-align: center;
-}
-
 .footer-link {
   font-family: "Libre Baskerville", serif;
   font-size: 1.1rem;
@@ -145,8 +139,9 @@ img {
     align-items: center;
   }
 
+  /* Ensure children don’t stretch weirdly */
   .contact-links > * {
-    flex: 0 1 auto;
+    flex: 0 0 auto;
     width: auto;
     text-align: center;
   }
@@ -156,10 +151,13 @@ img {
     width: auto;
   }
 
+  /* Keep the icon + text layout like desktop */
   .footer-link {
-    font-size: 1rem;
+    flex-direction: row;
     justify-content: flex-start;
-    flex: 0 1 auto;
+    font-size: 1rem;
+    gap: 8px;
+    width: auto;
     word-break: break-word;
   }
 
