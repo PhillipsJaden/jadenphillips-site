@@ -139,30 +139,10 @@ img {
     align-items: center;
   }
 
-  /* Ensure children don’t stretch weirdly */
   .contact-links > * {
     flex: 0 0 auto;
     width: auto;
     text-align: center;
   }
 
-  .signature-inline {
-    max-height: 4em;
-    width: auto;
-  }
-
-  /* Keep the icon + text layout like desktop */
-  .footer-link {
-    flex-direction: row;
-    justify-content: flex-start;
-    font-size: 1rem;
-    gap: 8px;
-    width: auto;
-    word-break: break-word;
-  }
-
-  .icon {
-    width: 1.2em;
-    height: 1.2em;
-  }
-}
+  .signature-
