@@ -136,10 +136,12 @@ img {
   .contact-links {
     flex-direction: column;
     gap: 16px;
+    align-items: center;
   }
 
   .signature-inline {
     max-height: 4em;
+    width: auto;
   }
 
   .footer-link {
@@ -151,3 +153,4 @@ img {
     height: 1.2em;
   }
 }
+
