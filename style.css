@@ -1,48 +1,5 @@
-body,
-.bio {
-  font-family: "EB Garamond", serif;
-  font-optical-sizing: auto;
-  color: #000;
-  margin: 0;
-  padding: 0;
-}
-
-.newsreader-name {
-  font-family: "Newsreader", serif;
-  font-optical-sizing: auto;
-  font-weight: 425;
-  font-style: normal;
-  font-size: clamp(2.8rem, 6vw, 4.4rem);
-  line-height: 1.1;
-  letter-spacing: -0.01em;
-  text-align: center;
-  margin-top: 100px;
-  margin-bottom: 0;
-}
-
-.container {
-  max-width: 700px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.bio {
-  font-size: clamp(1.25rem, 2vw, 1.45rem);
-  line-height: 1.75;
-  margin: 64px auto 72px;
-  max-width: 60ch;
-  text-align: center;
-  user-select: none;
-}
-
-.contact {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .contact-links {
-  display: inline-flex;
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -51,88 +8,13 @@ body,
   user-select: none;
 }
 
-.footer-link {
-  font-family: "Libre Baskerville", serif;
-  font-size: 1.1rem;
-  letter-spacing: 0.02em;
-  color: #000;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  user-select: none;
-}
-
-.footer-link:hover {
-  text-decoration: underline;
-}
-
-.icon {
-  width: 1.4em;
-  height: 1.4em;
-  object-fit: contain;
-}
-
-.signature-inline {
-  height: auto;
-  max-height: 6em;
-  width: auto;
-  opacity: 0.85;
-}
-
-.pgp {
-  margin-top: 6px;
-  font-family: "Libre Baskerville", serif;
-  font-size: 0.95rem;
-  letter-spacing: 0.08em;
+.contact-links > * {
+  flex: 1 1 auto; /* allow each child to shrink if needed */
+  min-width: 0; /* important for text to wrap on mobile */
   text-align: center;
-  user-select: text;
-}
-
-.pgp-label {
-  opacity: 0.6;
-  margin-right: 6px;
-}
-
-.pgp-fingerprint {
-  font-family: monospace;
-  letter-spacing: 0.1em;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-@media (max-width: 768px) {
-  .newsreader-name {
-    font-size: clamp(2.2rem, 8vw, 3.5rem);
-    margin-top: 80px;
-  }
-
-  .bio {
-    margin: 48px auto 56px;
-    font-size: clamp(1.15rem, 2.5vw, 1.35rem);
-    padding: 0 15px;
-  }
-
-  .contact-links {
-    gap: 24px;
-  }
 }
 
 @media (max-width: 480px) {
-  .newsreader-name {
-    font-size: clamp(1.8rem, 9vw, 2.8rem);
-    margin-top: 60px;
-  }
-
-  .bio {
-    margin: 36px auto 48px;
-    font-size: clamp(1rem, 3vw, 1.25rem);
-    padding: 0 12px;
-  }
-
   .contact-links {
     flex-direction: column;
     gap: 16px;
@@ -146,6 +28,8 @@ img {
 
   .footer-link {
     font-size: 1rem;
+    flex: 0 1 auto; /* allow shrink */
+    word-break: break-word; /* break long text */
   }
 
   .icon {
@@ -153,4 +37,3 @@ img {
     height: 1.2em;
   }
 }
-
