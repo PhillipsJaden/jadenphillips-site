@@ -134,7 +134,20 @@ img {
   }
 
   .contact-links {
-    gap: 20px;
     flex-direction: column;
+    gap: 16px;
+  }
+
+  .signature-inline {
+    max-height: 4em;
+  }
+
+  .footer-link {
+    font-size: 1rem;
+  }
+
+  .icon {
+    width: 1.2em;
+    height: 1.2em;
   }
 }
