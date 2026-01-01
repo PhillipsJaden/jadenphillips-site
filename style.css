@@ -33,6 +33,7 @@ body,
   max-width: 60ch;
   text-align: center;
   user-select: none;
+  font-weight: 500;
 }
 
 .contact {
@@ -125,15 +126,16 @@ img {
   .newsreader-name {
     font-size: clamp(1.8rem, 9vw, 2.8rem);
     font-weight: 600;
-    margin-top: 40px;
+    margin-top: 100px;
     margin-bottom: 12px;
   }
 
   .bio {
-    margin: 32px auto 24px;
-    font-size: clamp(1rem, 3vw, 1.3rem);
-    font-weight: 500;
-    line-height: 1.8;
+    margin: 48px auto 24px;
+    font-size: clamp(1.05rem, 3vw, 1.35rem);
+    font-weight: 600;
+    line-height: 1.9;
+    text-align: center;
     padding: 0 12px;
   }
 
