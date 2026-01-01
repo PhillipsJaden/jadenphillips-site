@@ -124,11 +124,13 @@ img {
 @media (max-width: 480px) {
   .newsreader-name {
     font-size: clamp(1.8rem, 9vw, 2.8rem);
+    font-weight: 600; /* slightly bolder like desktop */
     margin-top: 60px;
+    margin-bottom: 12px;
   }
 
   .bio {
-    margin: 36px auto 48px;
+    margin: 0 auto 36px; /* closer to center */
     font-size: clamp(1rem, 3vw, 1.25rem);
     padding: 0 12px;
   }
@@ -139,10 +141,22 @@ img {
     align-items: center;
   }
 
-  .contact-links > * {
-    flex: 0 0 auto;
-    width: auto;
-    text-align: center;
+  /* hide signature on mobile */
+  .signature-inline {
+    display: none;
   }
 
-  .signature-
+  .footer-link {
+    font-size: 1rem;
+    flex-direction: row;
+    justify-content: center;
+    gap: 8px;
+    width: auto;
+    word-break: break-word;
+  }
+
+  .icon {
+    width: 1.2em;
+    height: 1.2em;
+  }
+}
