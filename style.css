@@ -23,6 +23,7 @@ body,
   text-align: center;
   margin-top: 100px;
   margin-bottom: 0;
+  user-select: none; /* Make name non-copyable */
 }
 
 /* Container */
