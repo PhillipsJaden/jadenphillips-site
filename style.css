@@ -1,18 +1,16 @@
 body,
 .bio {
-  font-family: "Newsreader", serif;
+  font-family: "EB Garamond", serif;
   font-optical-sizing: auto;
   color: #000;
   margin: 0;
   padding: 0;
-  background: #ffffff;
 }
-
-/* MAIN NAME */
 
 .newsreader-name {
   font-family: "Newsreader", serif;
-  font-weight: 450;
+  font-optical-sizing: auto;
+  font-weight: 425;
   font-style: normal;
   font-size: clamp(2.8rem, 6vw, 4.4rem);
   line-height: 1.1;
@@ -22,15 +20,11 @@ body,
   margin-bottom: 0;
 }
 
-/* CONTAINER */
-
 .container {
   max-width: 700px;
   margin: 0 auto;
   padding: 0 20px;
 }
-
-/* BIO */
 
 .bio {
   font-size: clamp(1.25rem, 2vw, 1.45rem);
@@ -41,8 +35,6 @@ body,
   user-select: none;
   font-weight: 500;
 }
-
-/* CONTACT */
 
 .contact {
   display: flex;
@@ -61,7 +53,7 @@ body,
 }
 
 .footer-link {
-  font-family: "Newsreader", serif;
+  font-family: "Libre Baskerville", serif;
   font-size: 1.1rem;
   letter-spacing: 0.02em;
   color: #000;
@@ -76,15 +68,11 @@ body,
   text-decoration: underline;
 }
 
-/* ICONS */
-
 .icon {
   width: 1.4em;
   height: 1.4em;
   object-fit: contain;
 }
-
-/* SIGNATURE */
 
 .signature-inline {
   height: auto;
@@ -93,11 +81,9 @@ body,
   opacity: 0.85;
 }
 
-/* PGP */
-
 .pgp {
   margin-top: 6px;
-  font-family: "Newsreader", serif;
+  font-family: "Libre Baskerville", serif;
   font-size: 0.95rem;
   letter-spacing: 0.08em;
   text-align: center;
@@ -110,18 +96,14 @@ body,
 }
 
 .pgp-fingerprint {
-  font-family: "JetBrains Mono", monospace;
+  font-family: monospace;
   letter-spacing: 0.1em;
 }
-
-/* IMAGE DEFAULT */
 
 img {
   max-width: 100%;
   height: auto;
 }
-
-/* TABLET */
 
 @media (max-width: 768px) {
 
@@ -141,8 +123,6 @@ img {
   }
 
 }
-
-/* MOBILE */
 
 @media (max-width: 480px) {
 
