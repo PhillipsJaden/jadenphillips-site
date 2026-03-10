@@ -1,10 +1,10 @@
-/* Load Inter with necessary weights */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+/* Load IBM Plex Sans from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&display=swap");
 
 /* Base styles */
 body,
 .bio {
-  font-family: "Inter", sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   font-optical-sizing: auto;
   color: #000;
   margin: 0;
@@ -13,7 +13,7 @@ body,
 
 /* Hero Name */
 .newsreader-name {
-  font-family: "Inter", sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700; /* Strong presence */
   font-style: normal;
@@ -40,7 +40,7 @@ body,
   max-width: 60ch;
   text-align: center;
   user-select: none; /* Prevent copying */
-  font-weight: 400; /* Normal weight for readability */
+  font-weight: 400;
 }
 
 /* Contact section */
@@ -63,8 +63,8 @@ body,
 
 /* Links */
 .footer-link {
-  font-family: "Inter", sans-serif;
-  font-weight: 500; /* Medium weight */
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 600; /* Medium weight */
   font-size: 1.1rem;
   letter-spacing: 0.02em;
   color: #000;
@@ -97,7 +97,7 @@ body,
 /* PGP section */
 .pgp {
   margin-top: 6px;
-  font-family: "Inter", sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   font-weight: 400;
   font-size: 0.95rem;
   letter-spacing: 0.08em;
