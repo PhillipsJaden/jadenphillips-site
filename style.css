@@ -1,45 +1,48 @@
-body,
-.bio {
-  font-family: "EB Garamond", serif;
-  font-optical-sizing: auto;
-  color: #000;
+body {
+  font-family: "Newsreader", serif;
+  background: #fafafa;
+  color: #111;
   margin: 0;
   padding: 0;
 }
 
-.newsreader-name {
-  font-family: "Newsreader", serif;
-  font-optical-sizing: auto;
-  font-weight: 425;
-  font-style: normal;
-  font-size: clamp(2.8rem, 6vw, 4.4rem);
-  line-height: 1.1;
-  letter-spacing: -0.01em;
-  text-align: center;
-  margin-top: 100px;
-  margin-bottom: 0;
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 40px 20px;
 }
 
-.container {
-  max-width: 700px;
-  margin: 0 auto;
-  padding: 0 20px;
+/* HERO */
+
+.hero {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.name {
+  font-size: clamp(2.6rem, 5vw, 4rem);
+  font-weight: 450;
+  margin-bottom: 8px;
+  letter-spacing: -0.01em;
+}
+
+.tagline {
+  font-size: 1.15rem;
+  opacity: 0.75;
+  margin-bottom: 36px;
 }
 
 .bio {
-  font-size: clamp(1.25rem, 2vw, 1.45rem);
-  line-height: 1.75;
-  margin: 64px auto 72px;
+  font-size: 1.25rem;
+  line-height: 1.8;
   max-width: 60ch;
-  text-align: center;
-  user-select: none;
-  font-weight: 500;
+  margin: 0 auto 60px;
 }
 
+/* CONTACT */
+
 .contact {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
 }
 
 .contact-links {
@@ -47,119 +50,95 @@ body,
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 36px;
-  margin-bottom: 20px;
-  user-select: none;
+  gap: 28px;
+  margin-bottom: 40px;
 }
 
-.footer-link {
-  font-family: "Libre Baskerville", serif;
-  font-size: 1.1rem;
-  letter-spacing: 0.02em;
-  color: #000;
-  text-decoration: none;
+.contact-link {
   display: flex;
   align-items: center;
   gap: 8px;
-  user-select: none;
+  font-size: 1.05rem;
+  text-decoration: none;
+  color: #111;
 }
 
-.footer-link:hover {
+.contact-link:hover {
   text-decoration: underline;
 }
 
 .icon {
-  width: 1.4em;
-  height: 1.4em;
-  object-fit: contain;
+  width: 1.2em;
+  height: 1.2em;
 }
 
 .signature-inline {
-  height: auto;
-  max-height: 6em;
-  width: auto;
+  max-height: 60px;
   opacity: 0.85;
 }
 
+/* PGP SECTION */
+
 .pgp {
-  margin-top: 6px;
-  font-family: "Libre Baskerville", serif;
-  font-size: 0.95rem;
-  letter-spacing: 0.08em;
+  margin-top: 60px;
   text-align: center;
-  user-select: text;
 }
 
-.pgp-label {
-  opacity: 0.6;
-  margin-right: 6px;
+.pgp h2 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.pgp-description {
+  font-size: 1rem;
+  opacity: 0.75;
+  margin-bottom: 14px;
 }
 
 .pgp-fingerprint {
-  font-family: monospace;
-  letter-spacing: 0.1em;
+  font-family: "JetBrains Mono", monospace;
+  letter-spacing: 0.06em;
+  font-size: 0.9rem;
+  margin-bottom: 18px;
 }
+
+.pgp-download {
+  font-size: 0.95rem;
+  text-decoration: none;
+  border-bottom: 1px solid #111;
+  color: #111;
+}
+
+.pgp-download:hover {
+  opacity: 0.7;
+}
+
+/* IMAGES */
 
 img {
   max-width: 100%;
   height: auto;
 }
 
-@media (max-width: 768px) {
-  .newsreader-name {
-    font-size: clamp(2.2rem, 8vw, 3.5rem);
-    margin-top: 80px;
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+  .name {
+    font-size: 2.3rem;
   }
 
   .bio {
-    margin: 48px auto 56px;
-    font-size: clamp(1.15rem, 2.5vw, 1.35rem);
-    padding: 0 15px;
-  }
-
-  .contact-links {
-    gap: 24px;
-  }
-}
-
-@media (max-width: 480px) {
-  .newsreader-name {
-    font-size: clamp(1.8rem, 9vw, 2.8rem);
-    font-weight: 600;
-    margin-top: 100px;
-    margin-bottom: 12px;
-  }
-
-  .bio {
-    margin: 48px auto 24px;
-    font-size: clamp(1.05rem, 3vw, 1.35rem);
-    font-weight: 600;
-    line-height: 1.9;
-    text-align: center;
-    padding: 0 12px;
+    font-size: 1.1rem;
   }
 
   .contact-links {
     flex-direction: column;
     gap: 16px;
-    align-items: center;
   }
 
   .signature-inline {
     display: none;
   }
 
-  .footer-link {
-    font-size: 1rem;
-    flex-direction: row;
-    justify-content: center;
-    gap: 8px;
-    width: auto;
-    word-break: break-word;
-  }
-
-  .icon {
-    width: 1.2em;
-    height: 1.2em;
-  }
 }
