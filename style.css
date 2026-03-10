@@ -167,10 +167,10 @@ img {
     align-items: center;
   }
 
-  /* Signature tweaks */
-  .signature-inline {
-    max-height: 5em; /* slightly smaller signature */
-    opacity: 0.85;
+  /* Signature and PGP hidden on mobile */
+  .signature-inline,
+  .pgp {
+    display: none;
   }
 
   /* Footer links adjustments */
