@@ -1,16 +1,21 @@
+/* Load only Public Sans */
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&display=swap");
+
+/* Base styles */
 body,
 .bio {
-  font-family: "EB Garamond", serif;
+  font-family: "Public Sans", sans-serif;
   font-optical-sizing: auto;
   color: #000;
   margin: 0;
   padding: 0;
 }
 
+/* Hero Name */
 .newsreader-name {
-  font-family: "Newsreader", serif;
+  font-family: "Public Sans", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 425;
+  font-weight: 700; /* Strong presence */
   font-style: normal;
   font-size: clamp(2.8rem, 6vw, 4.4rem);
   line-height: 1.1;
@@ -20,28 +25,32 @@ body,
   margin-bottom: 0;
 }
 
+/* Container */
 .container {
   max-width: 700px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
+/* Bio */
 .bio {
   font-size: clamp(1.25rem, 2vw, 1.45rem);
   line-height: 1.75;
   margin: 64px auto 72px;
   max-width: 60ch;
   text-align: center;
-  user-select: none;
-  font-weight: 500;
+  user-select: none; /* Prevent copying */
+  font-weight: 400;
 }
 
+/* Contact section */
 .contact {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+/* Contact links */
 .contact-links {
   display: flex;
   flex-wrap: wrap;
@@ -49,11 +58,12 @@ body,
   align-items: center;
   gap: 36px;
   margin-bottom: 20px;
-  user-select: none;
+  user-select: none; /* Prevent copying */
 }
 
+/* Links */
 .footer-link {
-  font-family: "Libre Baskerville", serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 1.1rem;
   letter-spacing: 0.02em;
   color: #000;
@@ -68,12 +78,14 @@ body,
   text-decoration: underline;
 }
 
+/* Icons */
 .icon {
   width: 1.4em;
   height: 1.4em;
   object-fit: contain;
 }
 
+/* Signature */
 .signature-inline {
   height: auto;
   max-height: 6em;
@@ -81,13 +93,14 @@ body,
   opacity: 0.85;
 }
 
+/* PGP section */
 .pgp {
   margin-top: 6px;
-  font-family: "Libre Baskerville", serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 0.95rem;
   letter-spacing: 0.08em;
   text-align: center;
-  user-select: text;
+  user-select: none; /* Prevent copying on homepage */
 }
 
 .pgp-label {
@@ -96,17 +109,18 @@ body,
 }
 
 .pgp-fingerprint {
-  font-family: monospace;
+  font-family: monospace; /* Still monospace for readability */
   letter-spacing: 0.1em;
 }
 
+/* Images responsive */
 img {
   max-width: 100%;
   height: auto;
 }
 
+/* Media Queries */
 @media (max-width: 768px) {
-
   .newsreader-name {
     font-size: clamp(2.2rem, 8vw, 3.5rem);
     margin-top: 80px;
@@ -121,11 +135,9 @@ img {
   .contact-links {
     gap: 24px;
   }
-
 }
 
 @media (max-width: 480px) {
-
   .newsreader-name {
     font-size: clamp(1.8rem, 9vw, 2.8rem);
     font-weight: 600;
@@ -165,5 +177,4 @@ img {
     width: 1.2em;
     height: 1.2em;
   }
-
 }
