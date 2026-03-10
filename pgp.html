@@ -4,20 +4,40 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jaden Phillips — PGP Key</title>
-  <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" href="assets/site-logo.png">
+  <style>
+    /* Minimalist, centered PGP page */
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #ffffff;
+      font-family: monospace;
+      text-align: center;
+      color: #000000;
+    }
+
+    pre.pgp-key {
+      font-size: clamp(1rem, 2vw, 1.5rem); /* Large and responsive */
+      white-space: pre-wrap;
+      word-break: break-word;
+      margin: 0;
+    }
+
+    .pgp-fingerprint {
+      font-size: clamp(1rem, 1.8vw, 1.2rem);
+      margin-top: 2rem;
+      letter-spacing: 0.1em;
+    }
+  </style>
 </head>
 <body>
 
-  <main class="container hero">
-
-    <h1>PGP Public Key</h1>
-
-    <p>
-      Below is my PGP public key and fingerprint. Use this to send encrypted messages.
-    </p>
-
-    <pre class="pgp-key">
+  <pre class="pgp-key">
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 
 mDMEaUS7CBYJKwYBBAHaRw8BAQdAiCuWn5eAF+wcvCsHmwfqVgN0yscG9HsWA6f3
@@ -32,13 +52,11 @@ d7xXt5kLtt1Ar6YUeir6ZXnL8AD/Zt9i01kaf3VE/frXyd18k1uDATMcaJLHPezZ
 KkCpcwE=
 =RZNp
 -----END PGP PUBLIC KEY BLOCK-----
-    </pre>
+  </pre>
 
-    <p class="pgp-fingerprint">
-      Fingerprint: CF4A B5A3 E472 53A3 44B8 ED5B 04B4 B7F1 37CA 274B
-    </p>
-
-  </main>
+  <div class="pgp-fingerprint">
+    Fingerprint: CF4A B5A3 E472 53A3 44B8 ED5B 04B4 B7F1 37CA 274B
+  </div>
 
 </body>
 </html>
