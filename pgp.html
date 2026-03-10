@@ -6,7 +6,6 @@
   <title>Jaden Phillips — PGP Key</title>
   <link rel="icon" type="image/png" href="assets/site-logo.png">
   <style>
-    /* Minimalist, centered PGP page */
     body {
       margin: 0;
       padding: 0;
@@ -26,12 +25,14 @@
       white-space: pre-wrap;
       word-break: break-word;
       margin: 0;
+      user-select: text; /* Allow copying */
     }
 
     .pgp-fingerprint {
       font-size: clamp(1rem, 1.8vw, 1.2rem);
       margin-top: 2rem;
       letter-spacing: 0.1em;
+      user-select: none; /* Prevent copying */
     }
   </style>
 </head>
